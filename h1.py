@@ -1,7 +1,7 @@
 """
 h1.py
-(replace this with your name)
-(replace this with date completion date)
+MAMIDI SNEHITHA
+FEB 11,2020
 """
 
 
@@ -15,7 +15,8 @@ def my_extend(items, more_items):
     Example:
     my_exten([1, 2], ['hi']) returns [1, 2, 'hi']
     """
-
+    new_list=items + more_items
+    return new_list
 
 def my_reverse(num_list):
     """
@@ -49,8 +50,9 @@ def my_translate(word):
     my_translate('hi') returns 'ihly',
     my_translate('bye') returns 'ebyly'
     """
-
-
 if __name__ == '__main__':
-    # Replace statement pass below with your test cases
-    pass
+    # Testing my_extend()
+    items=[1,2]
+    more_items=["hi"]
+    new_list=my_extend(items, more_items)
+    print(f'my_extend({items},{more_items}) returns {new_list}')
