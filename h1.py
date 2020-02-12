@@ -91,6 +91,7 @@ if __name__ == '__main__':
     new_list=my_extend(items, more_items)
     print(f'my_extend({items},{more_items}) returns {new_list}')
 
+
     # Testing my_reverse()
     num_list=[1,2,3]
     new_list=my_reverse(num_list)
@@ -104,7 +105,20 @@ if __name__ == '__main__':
     new_list=my_reverse(num_list)
     print(f'my_reverse({[9,3,4,5,4,7,6]}) returns {new_list}')
 
+
     # Testing my_translate()
     word = "hi"
+    translated_word=my_translate(word)
+    print(f'my_extend({word}) returns {translated_word}')
+    # Test_case1 for my_translate()
+    word = "bye"
+    translated_word=my_translate(word)
+    print(f'my_extend({word}) returns {translated_word}')
+    # Test_case2 for my_translate()
+    word = ""
+    translated_word=my_translate(word)
+    print(f'my_extend({word}) returns {translated_word}')
+    # Test_case3 for my_translate()
+    word = "s"
     translated_word=my_translate(word)
     print(f'my_extend({word}) returns {translated_word}')
