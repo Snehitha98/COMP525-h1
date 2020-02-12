@@ -1,7 +1,7 @@
 """
 h1.py
 MAMIDI SNEHITHA
-FEB 11,2020
+FEBRUARY 11,2020
 """
 
 
@@ -60,6 +60,20 @@ def my_translate(word):
     my_translate('hi') returns 'ihly',
     my_translate('bye') returns 'ebyly'
     """
+    length=len(word)
+    if length==0:
+        translated_word = word
+    if length>0:
+        if len(word)==1:
+            translated_word = word+"ly"
+        else:
+            newstring = word[1:length-1]
+            laststring =word[-1]+newstring+word[0]
+            translated_word=laststring+"ly"
+    return translated_word
+
+
+
 if __name__ == '__main__':
     # Testing my_extend()
     items=[1,2]
@@ -89,3 +103,8 @@ if __name__ == '__main__':
     num_list=[9,3,4,5,4,7,6]
     new_list=my_reverse(num_list)
     print(f'my_reverse({[9,3,4,5,4,7,6]}) returns {new_list}')
+
+    # Testing my_translate()
+    word = "hi"
+    translated_word=my_translate(word)
+    print(f'my_extend({word}) returns {translated_word}')
