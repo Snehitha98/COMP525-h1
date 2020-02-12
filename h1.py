@@ -41,7 +41,8 @@ def my_reverse(num_list):
         num_list[last_index] = num_list[i]
         num_list[i] = temp
         last_index = last_index-1
-    return num_list
+    new_list=num_list
+    return new_list
 
 def my_translate(word):
     """
@@ -79,4 +80,12 @@ if __name__ == '__main__':
     # Testing my_reverse()
     num_list=[1,2,3]
     new_list=my_reverse(num_list)
-    print(f'my_reverse({num_list}) returns {new_list}')
+    print(f'my_reverse({[1,2,3]}) returns {new_list}')
+    # Test_case1 for my_reverse()
+    num_list=[6,0,1,9,5,2]
+    new_list=my_reverse(num_list)
+    print(f'my_reverse({[6,0,1,9,5,2]}) returns {new_list}')
+    # Test_case2 for my_reverse()
+    num_list=[9,3,4,5,4,7,6]
+    new_list=my_reverse(num_list)
+    print(f'my_reverse({[9,3,4,5,4,7,6]}) returns {new_list}')
