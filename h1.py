@@ -56,3 +56,13 @@ if __name__ == '__main__':
     more_items=["hi"]
     new_list=my_extend(items, more_items)
     print(f'my_extend({items},{more_items}) returns {new_list}')
+    # Test_case1 for my_extend()
+    items=["sneha","is","crazy"]
+    more_items=[" "]
+    new_list=my_extend(items, more_items)
+    print(f'my_extend({items},{more_items}) returns {new_list}')
+    # Test_case2 for my_extend()
+    items=["orange","tamato"]
+    more_items=["potato",5,6,7]
+    new_list=my_extend(items, more_items)
+    print(f'my_extend({items},{more_items}) returns {new_list}')
