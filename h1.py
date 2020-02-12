@@ -32,7 +32,16 @@ def my_reverse(num_list):
       Do NOT use list method reverse
       Must use the accumulation pattern
     """
-
+    size=len(num_list)
+    last_index=size-1
+    its=int(size/2)
+    k=range(its)
+    for i in k:
+        temp = num_list[last_index]
+        num_list[last_index] = num_list[i]
+        num_list[i] = temp
+        last_index = last_index-1
+    return num_list
 
 def my_translate(word):
     """
@@ -66,3 +75,8 @@ if __name__ == '__main__':
     more_items=["potato",5,6,7]
     new_list=my_extend(items, more_items)
     print(f'my_extend({items},{more_items}) returns {new_list}')
+
+    # Testing my_reverse()
+    num_list=[1,2,3]
+    new_list=my_reverse(num_list)
+    print(f'my_reverse({num_list}) returns {new_list}')
